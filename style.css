@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+body {
+  background-image: radial-gradient(#cc0000, #cc0000, #990000);
+  font-family: 'Pacifico', cursive;
+  color: #e6ac00;
+}
+
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+#banner {
+  width: 60vw;
+  height: 15vh;
+  border: 3px solid #e6ac00;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#banner h1 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 2.8em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.container {
+  background-color: #e0e0d1;
+  height: 60vh;
+  width: 60vw;
+  margin: 0 auto;
+  display: grid;
+}
+
+.gridBox {
+    flex-grow: 1;
+    border-left: 1px solid #bbb;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.gridLine {
+    display: flex;
+    flex-flow: row;
+    flex-grow: 1;
+    border-top: 1px solid #bbb;
+}
+
+.button {
+  margin: 0px 15px 0px 15px;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+@media(max-width: 850px) {
+  #banner h1{
+    font-size: 1.5em;
+  }
+
+  @media(max-width: 605px) {
+    .button {
+      padding: 10px;
+      font-size: .75em;
+    }
+
+@media(max-width: 525px) {
+  #banner h1{
+    font-size: 1em;
+  }
